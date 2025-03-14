@@ -57,6 +57,7 @@ require("data/data.php");
                             <div class="card-body">
                                 <h5 class="card-title mb-auto"><?php echo $value_data[0]; ?></h5>
                                 <p class="card-text mt-auto">Rp.<?php echo number_format($value_data[1]); ?></p>
+                                <a href="pesan.php?id=<?= $id; ?>" class="btn btn-outline-dark mt-4">Pesan Mobil</a>
                             </div>
                         </div>
                     </div>

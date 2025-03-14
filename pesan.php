@@ -1,4 +1,6 @@
 <?php
+require 'data/data.php';
+$id = $_GET['id'] ?? null;
 
 $nama_pemesan = "";
 $jenis_kelamin = "";
@@ -59,7 +61,6 @@ if (isset($_POST['hitung_total'])) {
         </div>
     </nav>
     <!-- Nav End -->
-
     <div class="container mt-4">
         <div class="row">
             <div class="col"></div>
@@ -93,9 +94,9 @@ if (isset($_POST['hitung_total'])) {
 
                         <label class="form-label">Tipe Mobil</label>
                         <select class="form-select mb-2" aria-label="Default select example" id="tipe_mobil" name="tipe_mobil" onchange="UpdateInput()">
-                            <option value="2000000" selected <?= $tipe_mobil == 2000000 ? 'selected' : '' ?>>Fortuner</option>
-                            <option value="1200000" <?= $tipe_mobil == 1200000 ? 'selected' : '' ?>>Creta</option>
-                            <option value="2500000" <?= $tipe_mobil == 2500000 ? 'selected' : '' ?>>Crv</option>
+                            <option value="2000000" selected <?php if (empty($id)) { echo $tipe_mobil == 2000000 ? 'selected' : ''; } else { echo $data[$id][1] == 2000000 ? 'selected' : ''; } ?>>Fortuner</option>
+                            <option value="1200000" <?php if (empty($id)) { echo $tipe_mobil == 1200000 ? 'selected' : ''; } else { echo $data[$id][1] == 1200000 ? 'selected' : ''; } ?>>Creta</option>
+                            <option value="2500000" <?php if (empty($id)) { echo $tipe_mobil == 2500000 ? 'selected' : ''; } else { echo $data[$id][1] == 2500000 ? 'selected' : ''; } ?>>Crv</option>
                         </select>
 
                         <label class="form-label">Harga</label>
