@@ -17,7 +17,7 @@ require("data/data.php");
     <!-- Nav Start -->
     <nav class="navbar sticky-top navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">Rental Mobil</a>
+            <a class="navbar-brand" href="index.php">Gedung Lima Rasa Restaurant</a>
         </div>
     </nav>
     <!-- Nav End -->
@@ -29,23 +29,23 @@ require("data/data.php");
             <div class="row align-items-center">
                 <div class="col">
                     <div class="text-start">
-                        <h1>Rental Mobil</h1><br>
-                        <h4>Kami Adalah Penyedia Layanan Rental Mobil.</h4>
-                        <button class="btn btn-outline-dark mt-2" name="lihat">Lihat</button>
+                        <h1>Gedung Lima Rasa Restaurant</h1><br>
+                        <h4>Tempat makan.</h4>
+                        <button class="btn btn-outline-warning mt-2" name="lihat">Lihat</button>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/logo2.png" width="60%">
+                    <img src="img/logo.jpg" width="60%">
                 </div>
             </div>
         </div>
-        <hr class="shadow-lg">
+        <hr>
         <!-- Banner End -->
 
         <div class="row">
             <!-- Items Start -->
             <div class="text-center">
-                <h3>Jenis Mobil</h3>
+                <h3>Jenis Gedung</h3>
             </div>
             <div class="row justify-content-center text-center">
                 <?php
@@ -57,7 +57,6 @@ require("data/data.php");
                             <div class="card-body">
                                 <h5 class="card-title mb-auto"><?php echo $value_data[0]; ?></h5>
                                 <p class="card-text mt-auto">Rp.<?php echo number_format($value_data[1]); ?></p>
-                                <a href="pesan.php?id=<?= $id; ?>" class="btn btn-outline-dark mt-4">Pesan Mobil</a>
                             </div>
                         </div>
                     </div>
@@ -66,9 +65,21 @@ require("data/data.php");
             <!-- Items End -->
         </div>
         <div class="text-center">
-            <a href="pesan.php" class="btn btn-outline-dark mt-4">Pesan Mobil</a>
+            <a href="pesan.php" class="btn btn-outline-warning mt-4">Pesan Gedung</a>
         </div>
+        <section>
+            <hr>
+            <div class="text-center">
+                <h4>Tentang Kami</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, odit? Dolorum praesentium cupiditate explicabo officiis distinctio eveniet ad facere voluptatum.</p>
+                <p>No Hp : 08xx-xxxx-xxxx</p>
+                <p>Alamat : jln. xxxx</p>
+            </div>
+        </section>
     </div>
+    <footer class="bg-dark text-center">
+        <p>@Copyright 2025</p>
+    </footer>
 </body>
 
 </html>

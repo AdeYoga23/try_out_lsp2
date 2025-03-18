@@ -6,3 +6,24 @@
     height: 100%;
     object-fit: cover;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    position: relative;
+    width: 100%;
+}

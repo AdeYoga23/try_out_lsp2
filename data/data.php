@@ -1,7 +1,6 @@
 <?php
 $data = array(
-    array("Fortuner", 2000000, "fortuner.jpg"),
-    array("Creta", 1200000, "creta.jpg"),
-    array("Crv", 2500000, "crv.jpg")
-    
+    array("VIP", 2000000, "VIP.jpg"),
+    array("BallRoom", 2500000, "BALLROOM.jpg"),
+    array("OutDoor", 1200000, "OUTDOOR.jpg")
 );
